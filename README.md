@@ -23,9 +23,11 @@ In this project, I would present an analysis of audio and visual information, es
       - Extract the frames from each video by using cv2.VideoCapture.read() function.
       - For each frame, crop the face from the complete image. Then resize it to 224*224 which is the input size for Alexnet that I used for training.
       - Store one frame every ten frames in the corresponding video name folder.
-    
-    ![Alt text](relative/path/to/img.jpg?raw=true "Title")
-    
+ 
+ <p align="center">
+    <img src="https://github.com/luyunan0404/Multimodal-Emotion-Recognition/blob/master/Document_image/image_sample.JPG" width="450" height="256" title="Github Logo">
+ </p>
+ 
   - The AlexNet network as pretrained model because of its promising performance and generalization ability in various vision tasks. The AlexNet model contains "features" layer and "classifier" layer. The "feature" layer contains five convolutional layers(Conv.), three of which are followed by max-pooling layers, and "classifier" layer contains three fully connected (FC.) layers, in which the first two FC. layers consist of 4096 units, respectively, and the last FC. layer has 1000 dimension corresponding to class labels. So in this visual network, I currently change the last FC. layer output to 7 which correspond to 7 emotion classes and add an Softmax() layer as the activation layer to represent the probability of the image corresponding to each category.
 
   - The test accuracy is 48.89%.
