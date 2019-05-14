@@ -61,7 +61,7 @@ In this project, I would present an analysis of audio and visual information, es
 ## Fusion Netowrk
 The Structure of the whole system can be seen in the following figure.
 <p align="center">
-    <img src="/Document_image/System.JPG" title="Github Logo">
+    <img src="/Document_image/System.jpg" title="Github Logo">
 </p>
 - Model 1 - CNN+CNN(8192)
 
